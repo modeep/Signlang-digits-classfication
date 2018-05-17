@@ -17,6 +17,8 @@ def load_signlang(size=2062):
         x_data.append(image)
         y_data.append(lable)
         size -= 1
+    return x_data, y_data
 
-a = load_signlang()
-print(a[1][1])
+if __name__ == '__main__':
+    a = load_signlang()
+    print(a[1][1])
